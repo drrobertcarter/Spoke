@@ -3,22 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spoke — No Lead Left Behind</title>
+<title>Ringbrigade — No Lead Left Behind</title>
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="%230b1c3a"/><circle cx="20" cy="20" r="13" stroke="%23d22730" stroke-width="5"/><path d="M14.5 20.5l5.5-5 5.5 5" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 26l5.5-5 5.5 5" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rajdhani:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --olive:#4b5320;
-    --olive-deep:#38401a;
-    --olive-dark:#232916;
-    --camo:#6b7a3a;
-    --sand:#e9e2ce;
-    --sand-light:#f3efe2;
-    --khaki:#c3b091;
-    --amber:#e8a13d;
-    --amber-hot:#d97f1e;
-    --ink:#171a10;
-    --gray:#5c6150;
+    --olive:#1e3a6e;
+    --olive-deep:#142a52;
+    --olive-dark:#0b1c3a;
+    --camo:#3a5a9c;
+    --sand:#eef2f8;
+    --sand-light:#f8fafd;
+    --khaki:#a9b8d0;
+    --amber:#d22730;
+    --amber-hot:#b01e26;
+    --ink:#0f1626;
+    --gray:#56607a;
     --card:#ffffff;
     --radius:6px;
   }
@@ -36,74 +37,74 @@
   .sec-head p{margin-top:16px;color:var(--gray);font-size:17px;line-height:1.6}
 
   /* ---------- Header ---------- */
-  header{position:sticky;top:0;background:rgba(35,41,22,.96);backdrop-filter:blur(10px);z-index:50;color:var(--sand)}
+  header{position:sticky;top:0;background:rgba(11,28,58,.96);backdrop-filter:blur(10px);z-index:50;color:var(--sand)}
   .nav{display:flex;align-items:center;gap:36px;height:78px}
-  .logo{display:flex;align-items:center;gap:11px;font-family:'Black Ops One',sans-serif;font-size:25px;color:var(--sand);letter-spacing:1px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Black Ops One',sans-serif;font-size:19px;color:var(--sand);letter-spacing:1px}
   .logo svg{width:34px;height:34px}
   nav.menu{display:flex;gap:28px;margin:0 auto;align-items:center;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:16px;letter-spacing:1.5px;text-transform:uppercase}
-  nav.menu a{color:#cfd4b8;transition:color .15s}
+  nav.menu a{color:#c9d5ea;transition:color .15s}
   nav.menu a:hover{color:var(--amber)}
-  .hiring{background:var(--amber);color:var(--ink);padding:3px 12px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:1px}
+  .hiring{background:var(--amber);color:#fff;padding:3px 12px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:1px}
   .nav-right{display:flex;align-items:center;gap:24px}
-  .login{font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:15px;color:#cfd4b8}
+  .login{font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:15px;color:#c9d5ea}
   .login:hover{color:var(--amber)}
-  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--amber);color:var(--ink);font-family:'Rajdhani',sans-serif;font-weight:700;font-size:16px;letter-spacing:1.5px;text-transform:uppercase;padding:14px 26px;border-radius:4px;border:none;cursor:pointer;transition:transform .15s, background .15s;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
-  .btn:hover{background:#f2b354;transform:translateY(-1px)}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--amber);color:#fff;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:16px;letter-spacing:1.5px;text-transform:uppercase;padding:14px 26px;border-radius:4px;border:none;cursor:pointer;transition:transform .15s, background .15s;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+  .btn:hover{background:#e04b52;transform:translateY(-1px)}
   .btn.dark{background:var(--olive-dark);color:var(--sand)}
   .btn.dark:hover{background:var(--olive)}
   .btn svg{width:13px;height:13px}
 
   /* ---------- Hero: command console ---------- */
   .hero-sec{position:relative;background:
-      radial-gradient(900px 520px at 78% 28%, rgba(107,122,58,.4), transparent 65%),
+      radial-gradient(900px 520px at 78% 28%, rgba(58,90,156,.4), transparent 65%),
       var(--olive-dark);
     color:var(--sand);padding:64px 0 0;border-bottom:4px solid var(--amber);overflow:hidden}
   .hero-sec::before{content:"";position:absolute;inset:0;background:
-      repeating-linear-gradient(0deg,transparent 0 47px,rgba(233,226,206,.05) 47px 48px),
-      repeating-linear-gradient(90deg,transparent 0 47px,rgba(233,226,206,.05) 47px 48px);pointer-events:none}
+      repeating-linear-gradient(0deg,transparent 0 47px,rgba(238,242,248,.05) 47px 48px),
+      repeating-linear-gradient(90deg,transparent 0 47px,rgba(238,242,248,.05) 47px 48px);pointer-events:none}
   .hero{position:relative;display:grid;grid-template-columns:1.08fr 1fr;gap:56px;align-items:center;padding-bottom:64px}
-  .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(233,226,206,.08);border:1.5px solid rgba(233,226,206,.3);border-radius:4px;padding:10px 20px;font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:1px;font-size:15px;text-transform:uppercase;margin-bottom:30px;color:#cfd4b8}
+  .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(238,242,248,.08);border:1.5px solid rgba(238,242,248,.3);border-radius:4px;padding:10px 20px;font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:1px;font-size:15px;text-transform:uppercase;margin-bottom:30px;color:#c9d5ea}
   .badge b{color:var(--amber)}
   h1{font-size:clamp(42px,6vw,80px);line-height:1.05;text-transform:uppercase;color:var(--sand)}
-  .hero p{margin-top:28px;font-size:19px;line-height:1.7;color:#b9bfa2;max-width:540px}
+  .hero p{margin-top:28px;font-size:19px;line-height:1.7;color:#9fb0cc;max-width:540px}
   .cta-row{display:flex;align-items:center;gap:30px;margin-top:38px}
   .link-cta{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:17px;letter-spacing:1.5px;text-transform:uppercase;color:var(--sand);border-bottom:2px solid var(--sand);padding-bottom:3px;transition:color .15s,border-color .15s}
   .link-cta:hover{color:var(--amber);border-color:var(--amber)}
 
-  /* radar console — the Spoke signature */
+  /* radar console — the Ringbrigade signature */
   .console{position:relative}
-  .radar{position:relative;width:min(420px,100%);aspect-ratio:1;margin:0 auto;border-radius:50%;border:2px solid rgba(233,226,206,.4);background:radial-gradient(circle, rgba(107,122,58,.3) 0%, rgba(23,26,16,.2) 72%);overflow:hidden}
-  .radar .ring{position:absolute;border-radius:50%;border:1.5px solid rgba(233,226,206,.22)}
+  .radar{position:relative;width:min(420px,100%);aspect-ratio:1;margin:0 auto;border-radius:50%;border:2px solid rgba(238,242,248,.4);background:radial-gradient(circle, rgba(58,90,156,.3) 0%, rgba(11,18,34,.2) 72%);overflow:hidden}
+  .radar .ring{position:absolute;border-radius:50%;border:1.5px solid rgba(238,242,248,.22)}
   .radar .r1{inset:16.6%}
   .radar .r2{inset:33.3%}
-  .radar .cross-v{position:absolute;left:50%;top:0;bottom:0;width:1.5px;background:rgba(233,226,206,.22);transform:translateX(-50%)}
-  .radar .cross-h{position:absolute;top:50%;left:0;right:0;height:1.5px;background:rgba(233,226,206,.22);transform:translateY(-50%)}
-  .radar .diag{position:absolute;left:50%;top:50%;width:100%;height:1.5px;background:rgba(233,226,206,.12);transform-origin:left center}
-  .sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg, rgba(232,161,61,.55), transparent 75deg);animation:sweep 4.8s linear infinite}
+  .radar .cross-v{position:absolute;left:50%;top:0;bottom:0;width:1.5px;background:rgba(238,242,248,.22);transform:translateX(-50%)}
+  .radar .cross-h{position:absolute;top:50%;left:0;right:0;height:1.5px;background:rgba(238,242,248,.22);transform:translateY(-50%)}
+  .radar .diag{position:absolute;left:50%;top:50%;width:100%;height:1.5px;background:rgba(238,242,248,.12);transform-origin:left center}
+  .sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg, rgba(210,39,48,.55), transparent 75deg);animation:sweep 4.8s linear infinite}
   @keyframes sweep{to{transform:rotate(360deg)}}
-  .hub{position:absolute;left:50%;top:50%;width:14px;height:14px;background:var(--amber);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 20px rgba(232,161,61,.95)}
-  .blip{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px rgba(232,161,61,.8);animation:blip 4.8s ease-out infinite}
+  .hub{position:absolute;left:50%;top:50%;width:14px;height:14px;background:var(--amber);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 20px rgba(210,39,48,.95)}
+  .blip{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px rgba(210,39,48,.8);animation:blip 4.8s ease-out infinite}
   @keyframes blip{0%,8%{opacity:0;transform:scale(.4)}16%{opacity:1;transform:scale(1.5)}45%{opacity:.85;transform:scale(1)}100%{opacity:0;transform:scale(.6)}}
-  .comms{margin:24px auto 0;width:min(420px,100%);background:rgba(23,26,16,.8);border:1.5px solid rgba(233,226,206,.25);border-radius:6px;padding:14px 18px;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:14px;letter-spacing:.6px}
+  .comms{margin:24px auto 0;width:min(420px,100%);background:rgba(11,18,34,.8);border:1.5px solid rgba(238,242,248,.25);border-radius:6px;padding:14px 18px;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:14px;letter-spacing:.6px}
   .comms .head{color:var(--amber);text-transform:uppercase;letter-spacing:2.5px;font-size:12px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
-  .comms .dot{width:8px;height:8px;border-radius:50%;background:#8fca5c;animation:pulse 1.6s infinite}
+  .comms .dot{width:8px;height:8px;border-radius:50%;background:#ffffff;animation:pulse 1.6s infinite}
   @keyframes pulse{50%{opacity:.25}}
-  .comms .cline{display:flex;justify-content:space-between;gap:14px;padding:5px 0;color:#cfd4b8;border-bottom:1px dashed rgba(233,226,206,.14)}
+  .comms .cline{display:flex;justify-content:space-between;gap:14px;padding:5px 0;color:#c9d5ea;border-bottom:1px dashed rgba(238,242,248,.14)}
   .comms .cline:last-child{border-bottom:none}
   .comms .ok{color:var(--amber);white-space:nowrap}
 
   /* stats bar */
-  .stats{position:relative;border-top:1.5px solid rgba(233,226,206,.2);background:rgba(23,26,16,.6)}
+  .stats{position:relative;border-top:1.5px solid rgba(238,242,248,.2);background:rgba(11,18,34,.6)}
   .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:28px;padding-bottom:28px}
   .stat{text-align:center}
   .stat b{font-family:'Black Ops One',sans-serif;font-weight:400;font-size:30px;color:var(--amber);display:block}
-  .stat span{font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:13px;color:#b9bfa2}
+  .stat span{font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:13px;color:#9fb0cc}
 
   /* ---------- Platform cards ---------- */
   .platform{background:var(--sand-light)}
   .cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-  .pcard{background:var(--card);border:1.5px solid #d8d2bc;border-top:5px solid var(--olive);border-radius:var(--radius);padding:30px 24px 28px;text-align:center;transition:transform .18s, box-shadow .18s}
-  .pcard:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(35,41,22,.12)}
+  .pcard{background:var(--card);border:1.5px solid #d3dcea;border-top:5px solid var(--olive);border-radius:var(--radius);padding:30px 24px 28px;text-align:center;transition:transform .18s, box-shadow .18s}
+  .pcard:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,28,58,.12)}
   .pcard .icon{width:54px;height:54px;margin:0 auto 18px;border:2px solid var(--olive);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--olive)}
   .pcard .icon svg{width:24px;height:24px}
   .pcard h3{font-family:'Rajdhani',sans-serif;font-size:21px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
@@ -111,16 +112,16 @@
   .chip-sm{font-family:'Rajdhani',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--khaki);border-radius:3px;padding:2px 10px;color:var(--gray)}
   .pcard p{font-size:15px;line-height:1.6;color:var(--gray);min-height:72px}
   .tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:16px}
-  .tag{font-size:12px;font-weight:600;background:var(--sand);border:1px solid #d8d2bc;border-radius:3px;padding:4px 10px;color:var(--olive-deep)}
+  .tag{font-size:12px;font-weight:600;background:var(--sand);border:1px solid #d3dcea;border-radius:3px;padding:4px 10px;color:var(--olive-deep)}
 
   /* ---------- Agents ---------- */
   .agents{background:var(--sand)}
   .agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:1060px;margin:0 auto}
-  .acard{background:var(--card);border:1.5px solid #d8d2bc;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s, box-shadow .18s}
-  .acard:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(35,41,22,.14)}
-  .acard.featured{border:2px solid var(--amber);box-shadow:0 10px 26px rgba(216,127,30,.22)}
+  .acard{background:var(--card);border:1.5px solid #d3dcea;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s, box-shadow .18s}
+  .acard:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,28,58,.14)}
+  .acard.featured{border:2px solid var(--amber);box-shadow:0 10px 26px rgba(176,30,38,.22)}
   .aimg{height:150px;background:linear-gradient(135deg,var(--olive) 0%,var(--olive-deep) 100%);position:relative;display:flex;align-items:center;justify-content:center}
-  .aimg::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0 26px,rgba(233,226,206,.06) 26px 52px)}
+  .aimg::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0 26px,rgba(238,242,248,.06) 26px 52px)}
   .aimg svg{width:84px;height:84px;position:relative}
   .stars{position:absolute;top:12px;right:14px;color:var(--amber);font-size:16px;letter-spacing:2px}
   .abody{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
@@ -132,33 +133,33 @@
   /* ---------- Testimonial ---------- */
   .testimonial{background:var(--olive-dark);color:var(--sand)}
   .testimonial .eyebrow{color:var(--amber)}
-  .tgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:0;max-width:1020px;margin:0 auto;border:1.5px solid rgba(233,226,206,.2);border-radius:var(--radius);overflow:hidden}
-  .tphoto{background:linear-gradient(160deg,#6b7a3a,#38401a);min-height:380px;position:relative;display:flex;align-items:flex-end;padding:26px}
-  .tphoto::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 30px,rgba(23,26,16,.14) 30px 60px)}
+  .tgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:0;max-width:1020px;margin:0 auto;border:1.5px solid rgba(238,242,248,.2);border-radius:var(--radius);overflow:hidden}
+  .tphoto{background:linear-gradient(160deg,#3a5a9c,#142a52);min-height:380px;position:relative;display:flex;align-items:flex-end;padding:26px}
+  .tphoto::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 30px,rgba(11,18,34,.14) 30px 60px)}
   .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .15s;box-shadow:0 10px 26px rgba(0,0,0,.35)}
   .play:hover{transform:translate(-50%,-50%) scale(1.07)}
-  .play svg{width:26px;height:26px;color:var(--ink);margin-left:4px}
+  .play svg{width:26px;height:26px;color:#fff;margin-left:4px}
   .tname{position:relative;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:19px;letter-spacing:1px;color:var(--amber);text-transform:uppercase}
-  .tquote{padding:44px 42px;display:flex;flex-direction:column;justify-content:center;background:rgba(233,226,206,.05)}
+  .tquote{padding:44px 42px;display:flex;flex-direction:column;justify-content:center;background:rgba(238,242,248,.05)}
   .tquote .qmark{font-family:'Black Ops One',sans-serif;font-size:52px;color:var(--amber);line-height:1}
-  .tquote blockquote{font-size:18px;line-height:1.75;font-style:italic;margin:12px 0 26px;color:#e4e0cd}
+  .tquote blockquote{font-size:18px;line-height:1.75;font-style:italic;margin:12px 0 26px;color:#dde6f4}
   .tquote blockquote b{color:var(--amber);font-style:normal}
   .tby{font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:1px;text-transform:uppercase}
-  .tby span{display:block;font-family:'Barlow',sans-serif;font-weight:500;text-transform:none;letter-spacing:0;color:#b9bfa2;font-size:14px;margin-top:2px}
+  .tby span{display:block;font-family:'Barlow',sans-serif;font-weight:500;text-transform:none;letter-spacing:0;color:#9fb0cc;font-size:14px;margin-top:2px}
 
   /* ---------- Comparison ---------- */
   .compare{background:var(--sand-light)}
-  .table-wrap{max-width:960px;margin:0 auto;overflow-x:auto;border:1.5px solid #d8d2bc;border-radius:var(--radius);background:var(--card)}
+  .table-wrap{max-width:960px;margin:0 auto;overflow-x:auto;border:1.5px solid #d3dcea;border-radius:var(--radius);background:var(--card)}
   table{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
-  th,td{padding:15px 18px;text-align:center;border-bottom:1px solid #ece7d5}
+  th,td{padding:15px 18px;text-align:center;border-bottom:1px solid #e6ebf4}
   tr:last-child td{border-bottom:none}
   th{font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:14px;background:var(--olive-dark);color:var(--sand)}
   th:first-child, td:first-child{text-align:left;font-weight:600}
-  th.spoke{background:var(--amber);color:var(--ink)}
-  td.spoke{background:#fbf3e0;font-weight:700;color:var(--olive-deep)}
-  .yes{color:#3e7d2c;font-weight:700}
-  .no{color:#b23a2f;font-weight:700}
-  .meh{color:#b07d1e;font-weight:700}
+  th.spoke{background:var(--amber);color:#fff}
+  td.spoke{background:#fdeaea;font-weight:700;color:var(--olive-deep)}
+  .yes{color:#1e3a6e;font-weight:700}
+  .no{color:#b01e26;font-weight:700}
+  .meh{color:#6b7280;font-weight:700}
 
   /* ---------- Ops timeline ---------- */
   .ops{background:var(--sand)}
@@ -167,11 +168,11 @@
   .op{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;margin-bottom:70px}
   .op:last-child{margin-bottom:0}
   .op::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:16px;background:var(--amber);border:3px solid var(--olive-dark);transform:translate(-50%,-50%) rotate(45deg)}
-  .op-text{background:var(--card);border:1.5px solid #d8d2bc;border-left:5px solid var(--amber);border-radius:var(--radius);padding:28px 30px}
+  .op-text{background:var(--card);border:1.5px solid #d3dcea;border-left:5px solid var(--amber);border-radius:var(--radius);padding:28px 30px}
   .step-pill{display:inline-block;font-family:'Rajdhani',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:var(--olive);color:var(--sand);padding:3px 12px;border-radius:3px;margin-bottom:12px}
   .op-text h3{font-family:'Rajdhani',sans-serif;font-size:23px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;line-height:1.25}
   .op-text p{margin-top:10px;color:var(--gray);line-height:1.6;font-size:15.5px}
-  .op-visual{background:var(--card);border:1.5px solid #d8d2bc;border-radius:var(--radius);padding:16px;min-height:200px;display:flex;align-items:center;justify-content:center}
+  .op-visual{background:var(--card);border:1.5px solid #d3dcea;border-radius:var(--radius);padding:16px;min-height:200px;display:flex;align-items:center;justify-content:center}
   .op-visual svg{width:100%;height:auto;max-height:220px}
   .op:nth-child(even) .op-text{order:2}
   .op:nth-child(even) .op-visual{order:1}
@@ -195,13 +196,13 @@
   /* layer color schemes */
   .layer.apps{background:transparent;border:none;padding:0}
   .layer.apps .box-row{max-width:720px;margin:0 auto}
-  .layer.apps .abox{background:#e6efe4;border-color:#8fae87;color:#2e4a28;padding:20px 18px}
-  .layer.force{background:#f6e9de;border-color:#cfa382;color:#7a3d16}
-  .layer.force .abox{background:#fdf7f1;border-color:#cfa382;color:#7a3d16}
-  .layer.core{background:#e9ead9;border-color:var(--camo);color:var(--olive-deep)}
-  .layer.core .abox{background:#f8f8ec;border-color:var(--camo);color:var(--olive-deep)}
+  .layer.apps .abox{background:#e5eefb;border-color:#7f9fd0;color:#1e3a6e;padding:20px 18px}
+  .layer.force{background:#f5e6e6;border-color:#c08c8c;color:#7a2c2c}
+  .layer.force .abox{background:#fbf3f3;border-color:#c08c8c;color:#7a2c2c}
+  .layer.core{background:#e9eef8;border-color:var(--camo);color:var(--olive-deep)}
+  .layer.core .abox{background:#f9fbfe;border-color:var(--camo);color:var(--olive-deep)}
   .layer.supply{background:transparent;border:none;padding:0}
-  .layer.supply .abox{background:var(--sand);border-color:#b7ad8f;color:#4a4433;padding:18px}
+  .layer.supply .abox{background:var(--sand);border-color:#aebcd2;color:#2c3a55;padding:18px}
   .arch-arrow{display:flex;justify-content:center;padding:14px 0;color:var(--olive)}
   .arch-arrow svg{width:22px;height:30px}
   .arch-arrow.triple{gap:180px}
@@ -214,7 +215,7 @@
   /* ---------- Footer CTA ---------- */
   .final{background:var(--olive-dark);color:var(--sand);text-align:center;border-top:4px solid var(--amber)}
   .final h2{font-size:clamp(30px,4.4vw,50px);text-transform:uppercase}
-  .final p{margin:18px auto 34px;color:#b9bfa2;max-width:540px;font-size:17px;line-height:1.6}
+  .final p{margin:18px auto 34px;color:#9fb0cc;max-width:540px;font-size:17px;line-height:1.6}
 
   /* responsive */
   @media (max-width:1000px){
@@ -247,6 +248,15 @@
     .sweep{opacity:.35}
     .blip{opacity:.9}
   }
+  /* accessible accent on dark surfaces (red on navy fails contrast; brighter tint passes AA) */
+  :root{--amber-lite:#ff6b70}
+  nav.menu a:hover,.login:hover{color:var(--amber-lite)}
+  .badge b,.hero-sec .accent,.stat b,.comms .head,.comms .ok,
+  .testimonial .accent,.testimonial .eyebrow,.tquote .qmark,.tquote blockquote b,.tname,
+  .final .accent{color:var(--amber-lite)}
+  .link-cta:hover{color:var(--amber-lite);border-color:var(--amber-lite)}
+  .hub,.blip{background:var(--amber-lite)}
+  .sweep{background:conic-gradient(from 0deg, rgba(255,107,112,.55), transparent 75deg)}
 </style>
 </head>
 <body>
@@ -254,15 +264,13 @@
 <header>
   <div class="wrap nav">
     <a class="logo" href="#">
+      <!-- Ringbrigade mark: red ring + brigade chevrons -->
       <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <circle cx="20" cy="20" r="17" stroke="#e8a13d" stroke-width="4"/>
-        <circle cx="20" cy="20" r="4.5" fill="#e8a13d"/>
-        <g stroke="#e9e2ce" stroke-width="3" stroke-linecap="round">
-          <line x1="20" y1="8" x2="20" y2="15"/><line x1="20" y1="25" x2="20" y2="32"/>
-          <line x1="8" y1="20" x2="15" y2="20"/><line x1="25" y1="20" x2="32" y2="20"/>
-        </g>
+        <circle cx="20" cy="20" r="15" stroke="#d22730" stroke-width="5.5"/>
+        <path d="M13.5 20.5l6.5-6 6.5 6" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13.5 27l6.5-6 6.5 6" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      SPOKE
+      RINGBRIGADE
     </a>
     <nav class="menu">
       <a href="#platform">AI Agents</a>
@@ -288,7 +296,7 @@
     <div class="reveal in">
       <div class="badge">⚙ Fully integrates with <b>ServiceTitan®</b> — or any CRM</div>
       <h1 class="display">No Lead<br>Left <span class="accent">Behind</span></h1>
-      <p>Spoke puts an AI workforce on permanent watch for your trades business — answering every call, booking every job, and hunting down every open estimate. 24/7. No breaks. No missed rings.</p>
+      <p>Ringbrigade puts an AI workforce on permanent watch for your trades business — answering every call, booking every job, and hunting down every open estimate. 24/7. No breaks. No missed rings.</p>
       <div class="cta-row">
         <button class="btn">Request A Briefing
           <svg viewBox="0 0 12 12" fill="none"><path d="M3 1l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -313,7 +321,7 @@
         <div class="blip" style="top:34%;left:34%;animation-delay:3.4s"></div>
       </div>
       <div class="comms">
-        <div class="head"><span class="dot"></span> Live Comms — Spoke Dispatch</div>
+        <div class="head"><span class="dot"></span> Live Comms — Brigade Dispatch</div>
         <div class="cline"><span>22:14 · Inbound call, Springfield</span><span class="ok">Job booked ✔</span></div>
         <div class="cline"><span>22:16 · Missed-call SMS deployed</span><span class="ok">Reply in 41s</span></div>
         <div class="cline"><span>22:19 · Open estimate follow-up</span><span class="ok">$4,820 recovered</span></div>
@@ -377,13 +385,13 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="eyebrow">// The Squad</div>
-      <h2 class="display">Meet The <span class="accent">Spoke</span> Squad</h2>
+      <h2 class="display">Meet Your <span class="accent">Brigade</span></h2>
       <p>AI agents that sound human, follow your script, show empathy, and stand watch 24/7. Plus, they're experts in ServiceTitan, Housecall Pro, and more.</p>
     </div>
     <div class="agrid">
       <div class="acard featured reveal">
         <div class="aimg"><div class="stars">★</div>
-          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#c3b091"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#e8a13d" stroke="#171a10" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#e9e2ce"/><rect x="52" y="30" width="7" height="12" rx="3" fill="#232916"/></svg>
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#a9b8d0"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#d22730" stroke="#0f1626" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#eef2f8"/><rect x="52" y="30" width="7" height="12" rx="3" fill="#0b1c3a"/></svg>
         </div>
         <div class="abody">
           <span class="rank">CSR</span>
@@ -394,7 +402,7 @@
       </div>
       <div class="acard reveal">
         <div class="aimg">
-          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#c3b091"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#4b5320" stroke="#171a10" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#e9e2ce"/></svg>
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#a9b8d0"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#1e3a6e" stroke="#0f1626" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#eef2f8"/></svg>
         </div>
         <div class="abody">
           <span class="rank">Receptionist</span>
@@ -405,7 +413,7 @@
       </div>
       <div class="acard reveal">
         <div class="aimg">
-          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#c3b091"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#4b5320" stroke="#171a10" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#e9e2ce"/><rect x="52" y="30" width="7" height="12" rx="3" fill="#232916"/></svg>
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#a9b8d0"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#1e3a6e" stroke="#0f1626" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#eef2f8"/><rect x="52" y="30" width="7" height="12" rx="3" fill="#0b1c3a"/></svg>
         </div>
         <div class="abody">
           <span class="rank">Happy Call Specialist</span>
@@ -416,7 +424,7 @@
       </div>
       <div class="acard reveal">
         <div class="aimg">
-          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#c3b091"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#4b5320" stroke="#171a10" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#e9e2ce"/><rect x="21" y="30" width="7" height="12" rx="3" fill="#232916"/></svg>
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#a9b8d0"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#1e3a6e" stroke="#0f1626" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#eef2f8"/><rect x="21" y="30" width="7" height="12" rx="3" fill="#0b1c3a"/></svg>
         </div>
         <div class="abody">
           <span class="rank">Sales Agent</span>
@@ -427,7 +435,7 @@
       </div>
       <div class="acard reveal">
         <div class="aimg">
-          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#c3b091"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#4b5320" stroke="#171a10" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#e9e2ce"/><rect x="52" y="30" width="7" height="12" rx="3" fill="#232916"/></svg>
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="34" r="16" fill="#a9b8d0"/><path d="M22 30a19 17 0 0 1 36 0l-3 6H25z" fill="#1e3a6e" stroke="#0f1626" stroke-width="2"/><path d="M18 72q22-20 44 0v6H18z" fill="#eef2f8"/><rect x="52" y="30" width="7" height="12" rx="3" fill="#0b1c3a"/></svg>
         </div>
         <div class="abody">
           <span class="rank">Open Estimate Specialist</span>
@@ -438,7 +446,7 @@
       </div>
       <div class="acard reveal">
         <div class="aimg">
-          <svg viewBox="0 0 80 80" fill="none"><circle cx="28" cy="36" r="12" fill="#c3b091"/><circle cx="52" cy="36" r="12" fill="#c3b091"/><path d="M15 33a14 13 0 0 1 26 0l-2 5H17z" fill="#4b5320" stroke="#171a10" stroke-width="2"/><path d="M39 33a14 13 0 0 1 26 0l-2 5H41z" fill="#4b5320" stroke="#171a10" stroke-width="2"/><path d="M10 74q30-22 60 0v4H10z" fill="#e9e2ce"/></svg>
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="28" cy="36" r="12" fill="#a9b8d0"/><circle cx="52" cy="36" r="12" fill="#a9b8d0"/><path d="M15 33a14 13 0 0 1 26 0l-2 5H17z" fill="#1e3a6e" stroke="#0f1626" stroke-width="2"/><path d="M39 33a14 13 0 0 1 26 0l-2 5H41z" fill="#1e3a6e" stroke="#0f1626" stroke-width="2"/><path d="M10 74q30-22 60 0v4H10z" fill="#eef2f8"/></svg>
         </div>
         <div class="abody">
           <span class="rank">Outbound</span>
@@ -479,14 +487,14 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="eyebrow">// Battle Report</div>
-      <h2 class="display">Spoke vs. The Field:<br>Who <span class="accent">Holds The Line?</span></h2>
+      <h2 class="display">Ringbrigade vs. The Field:<br>Who <span class="accent">Holds The Line?</span></h2>
     </div>
     <div class="table-wrap reveal">
       <table>
         <thead>
           <tr>
             <th></th>
-            <th class="spoke">Spoke AI ⚙</th>
+            <th class="spoke">Ringbrigade ⚙</th>
             <th>Other AI Services</th>
             <th>Answering Services</th>
           </tr>
@@ -501,7 +509,7 @@
           <tr><td>CSR Coaching 🎯</td><td class="spoke">Real-time</td><td class="meh">Basic</td><td class="no">Manual reviews</td></tr>
           <tr><td>Enterprise Reporting 📊</td><td class="spoke">Roll-up reports for all partners</td><td class="meh">Individual reports</td><td>—</td></tr>
           <tr><td>Represent Brand 🎖</td><td class="spoke">Yes — sounds like your business</td><td class="meh">Partial — some personalization</td><td class="no">No — generic for all clients</td></tr>
-          <tr><td>Customer Satisfaction 🙂</td><td class="spoke yes">Love 💚</td><td class="meh">Okay 😐</td><td class="no">Angry 😠</td></tr>
+          <tr><td>Customer Satisfaction 🙂</td><td class="spoke yes">Love ❤️</td><td class="meh">Okay 😐</td><td class="no">Angry 😠</td></tr>
         </tbody>
       </table>
     </div>
@@ -523,7 +531,7 @@
           <p>The AI CSR engages a customer who wants to request an emergency service — calmly, clearly, and in your brand's voice.</p>
         </div>
         <div class="op-visual">
-          <svg viewBox="0 0 320 180"><rect x="10" y="10" width="300" height="160" rx="6" fill="#f3efe2" stroke="#c3b091"/><rect x="10" y="10" width="300" height="28" rx="6" fill="#4b5320"/><circle cx="26" cy="24" r="5" fill="#e8a13d"/><rect x="40" y="19" width="90" height="10" rx="2" fill="#e9e2ce"/><g fill="#fff" stroke="#d8d2bc"><rect x="24" y="52" width="272" height="20" rx="3"/><rect x="24" y="80" width="272" height="20" rx="3"/><rect x="24" y="108" width="272" height="20" rx="3"/><rect x="24" y="136" width="272" height="20" rx="3"/></g><g fill="#6b7a3a"><rect x="30" y="57" width="60" height="10" rx="2"/><rect x="30" y="85" width="60" height="10" rx="2"/><rect x="30" y="113" width="60" height="10" rx="2"/><rect x="30" y="141" width="60" height="10" rx="2"/></g><g fill="#e8a13d"><rect x="240" y="57" width="48" height="10" rx="5"/><rect x="240" y="85" width="48" height="10" rx="5"/><rect x="240" y="113" width="48" height="10" rx="5"/><rect x="240" y="141" width="48" height="10" rx="5"/></g></svg>
+          <svg viewBox="0 0 320 180"><rect x="10" y="10" width="300" height="160" rx="6" fill="#f8fafd" stroke="#a9b8d0"/><rect x="10" y="10" width="300" height="28" rx="6" fill="#1e3a6e"/><circle cx="26" cy="24" r="5" fill="#d22730"/><rect x="40" y="19" width="90" height="10" rx="2" fill="#eef2f8"/><g fill="#fff" stroke="#d3dcea"><rect x="24" y="52" width="272" height="20" rx="3"/><rect x="24" y="80" width="272" height="20" rx="3"/><rect x="24" y="108" width="272" height="20" rx="3"/><rect x="24" y="136" width="272" height="20" rx="3"/></g><g fill="#3a5a9c"><rect x="30" y="57" width="60" height="10" rx="2"/><rect x="30" y="85" width="60" height="10" rx="2"/><rect x="30" y="113" width="60" height="10" rx="2"/><rect x="30" y="141" width="60" height="10" rx="2"/></g><g fill="#d22730"><rect x="240" y="57" width="48" height="10" rx="5"/><rect x="240" y="85" width="48" height="10" rx="5"/><rect x="240" y="113" width="48" height="10" rx="5"/><rect x="240" y="141" width="48" height="10" rx="5"/></g></svg>
         </div>
       </div>
       <div class="op reveal">
@@ -533,7 +541,7 @@
           <p>The AI books the job and assigns the on-call technician on the dispatch board — in ServiceTitan, Housecall Pro, or any CRM you use.</p>
         </div>
         <div class="op-visual">
-          <svg viewBox="0 0 320 180"><rect x="10" y="10" width="300" height="160" rx="6" fill="#f3efe2" stroke="#c3b091"/><rect x="10" y="10" width="80" height="160" fill="#e9e2ce"/><g fill="#a8956f"><rect x="20" y="48" width="58" height="8" rx="2"/><rect x="20" y="66" width="58" height="8" rx="2"/><rect x="20" y="84" width="58" height="8" rx="2"/><rect x="20" y="102" width="58" height="8" rx="2"/></g><rect x="10" y="10" width="300" height="26" rx="6" fill="#38401a"/><g><rect x="100" y="48" width="60" height="24" rx="3" fill="#6b7a3a"/><rect x="168" y="48" width="90" height="24" rx="3" fill="#e8a13d"/><rect x="100" y="80" width="120" height="24" rx="3" fill="#c3b091"/><rect x="100" y="112" width="80" height="24" rx="3" fill="#6b7a3a"/><rect x="188" y="112" width="100" height="24" rx="3" fill="#c3b091"/><rect x="100" y="144" width="150" height="16" rx="3" fill="#e8a13d"/></g></svg>
+          <svg viewBox="0 0 320 180"><rect x="10" y="10" width="300" height="160" rx="6" fill="#f8fafd" stroke="#a9b8d0"/><rect x="10" y="10" width="80" height="160" fill="#eef2f8"/><g fill="#93a6c4"><rect x="20" y="48" width="58" height="8" rx="2"/><rect x="20" y="66" width="58" height="8" rx="2"/><rect x="20" y="84" width="58" height="8" rx="2"/><rect x="20" y="102" width="58" height="8" rx="2"/></g><rect x="10" y="10" width="300" height="26" rx="6" fill="#142a52"/><g><rect x="100" y="48" width="60" height="24" rx="3" fill="#3a5a9c"/><rect x="168" y="48" width="90" height="24" rx="3" fill="#d22730"/><rect x="100" y="80" width="120" height="24" rx="3" fill="#a9b8d0"/><rect x="100" y="112" width="80" height="24" rx="3" fill="#3a5a9c"/><rect x="188" y="112" width="100" height="24" rx="3" fill="#a9b8d0"/><rect x="100" y="144" width="150" height="16" rx="3" fill="#d22730"/></g></svg>
         </div>
       </div>
       <div class="op reveal">
@@ -543,12 +551,12 @@
           <p>A built-in escalation flow fires a phone call and text message chain to alert the on-call technician and manager — no lead left behind.</p>
         </div>
         <div class="op-visual">
-          <svg viewBox="0 0 320 180"><rect x="10" y="10" width="300" height="160" rx="6" fill="#f3efe2" stroke="#c3b091"/><rect x="10" y="10" width="300" height="26" rx="6" fill="#4b5320"/><text x="24" y="28" font-family="Rajdhani,sans-serif" font-size="13" font-weight="700" fill="#e9e2ce">ON-CALL SCHEDULER</text><g stroke="#d8d2bc" fill="#fff">
+          <svg viewBox="0 0 320 180"><rect x="10" y="10" width="300" height="160" rx="6" fill="#f8fafd" stroke="#a9b8d0"/><rect x="10" y="10" width="300" height="26" rx="6" fill="#1e3a6e"/><text x="24" y="28" font-family="Rajdhani,sans-serif" font-size="13" font-weight="700" fill="#eef2f8">ON-CALL SCHEDULER</text><g stroke="#d3dcea" fill="#fff">
           <rect x="24" y="46" width="38" height="30" rx="3"/><rect x="66" y="46" width="38" height="30" rx="3"/><rect x="108" y="46" width="38" height="30" rx="3"/><rect x="150" y="46" width="38" height="30" rx="3"/><rect x="192" y="46" width="38" height="30" rx="3"/><rect x="234" y="46" width="38" height="30" rx="3"/>
           <rect x="24" y="82" width="38" height="30" rx="3"/><rect x="66" y="82" width="38" height="30" rx="3"/><rect x="108" y="82" width="38" height="30" rx="3"/><rect x="150" y="82" width="38" height="30" rx="3"/><rect x="192" y="82" width="38" height="30" rx="3"/><rect x="234" y="82" width="38" height="30" rx="3"/>
           <rect x="24" y="118" width="38" height="30" rx="3"/><rect x="66" y="118" width="38" height="30" rx="3"/><rect x="108" y="118" width="38" height="30" rx="3"/><rect x="150" y="118" width="38" height="30" rx="3"/><rect x="192" y="118" width="38" height="30" rx="3"/><rect x="234" y="118" width="38" height="30" rx="3"/></g>
-          <g fill="#e8a13d" opacity=".85"><rect x="66" y="52" width="26" height="8" rx="2"/><rect x="150" y="88" width="26" height="8" rx="2"/><rect x="234" y="124" width="26" height="8" rx="2"/><rect x="108" y="124" width="26" height="8" rx="2"/></g>
-          <g fill="#6b7a3a" opacity=".85"><rect x="24" y="88" width="26" height="8" rx="2"/><rect x="192" y="52" width="26" height="8" rx="2"/><rect x="66" y="124" width="26" height="8" rx="2"/></g></svg>
+          <g fill="#d22730" opacity=".85"><rect x="66" y="52" width="26" height="8" rx="2"/><rect x="150" y="88" width="26" height="8" rx="2"/><rect x="234" y="124" width="26" height="8" rx="2"/><rect x="108" y="124" width="26" height="8" rx="2"/></g>
+          <g fill="#3a5a9c" opacity=".85"><rect x="24" y="88" width="26" height="8" rx="2"/><rect x="192" y="52" width="26" height="8" rx="2"/><rect x="66" y="124" width="26" height="8" rx="2"/></g></svg>
         </div>
       </div>
       <div class="op reveal">
@@ -558,7 +566,7 @@
           <p>The AI files a full after-action report — an email with the complete transcript and summary — for the service team to review during office hours.</p>
         </div>
         <div class="op-visual">
-          <svg viewBox="0 0 320 180"><rect x="60" y="8" width="200" height="164" rx="6" fill="#fff" stroke="#c3b091"/><rect x="60" y="8" width="200" height="26" rx="6" fill="#4b5320"/><text x="74" y="26" font-family="Rajdhani,sans-serif" font-size="12" font-weight="700" fill="#e9e2ce">✔ JOB BOOKING CONFIRMATION</text><g fill="#e9e2ce"><rect x="74" y="46" width="172" height="14" rx="2"/><rect x="74" y="66" width="140" height="8" rx="2"/><rect x="74" y="80" width="160" height="8" rx="2"/><rect x="74" y="94" width="120" height="8" rx="2"/></g><rect x="74" y="112" width="172" height="1.5" fill="#c3b091"/><g fill="#e9e2ce"><rect x="74" y="122" width="80" height="8" rx="2"/><rect x="164" y="122" width="80" height="8" rx="2"/><rect x="74" y="136" width="80" height="8" rx="2"/><rect x="164" y="136" width="80" height="8" rx="2"/></g><rect x="74" y="152" width="90" height="14" rx="3" fill="#e8a13d"/></svg>
+          <svg viewBox="0 0 320 180"><rect x="60" y="8" width="200" height="164" rx="6" fill="#fff" stroke="#a9b8d0"/><rect x="60" y="8" width="200" height="26" rx="6" fill="#1e3a6e"/><text x="74" y="26" font-family="Rajdhani,sans-serif" font-size="12" font-weight="700" fill="#eef2f8">✔ JOB BOOKING CONFIRMATION</text><g fill="#eef2f8"><rect x="74" y="46" width="172" height="14" rx="2"/><rect x="74" y="66" width="140" height="8" rx="2"/><rect x="74" y="80" width="160" height="8" rx="2"/><rect x="74" y="94" width="120" height="8" rx="2"/></g><rect x="74" y="112" width="172" height="1.5" fill="#a9b8d0"/><g fill="#eef2f8"><rect x="74" y="122" width="80" height="8" rx="2"/><rect x="164" y="122" width="80" height="8" rx="2"/><rect x="74" y="136" width="80" height="8" rx="2"/><rect x="164" y="136" width="80" height="8" rx="2"/></g><rect x="74" y="152" width="90" height="14" rx="3" fill="#d22730"/></svg>
         </div>
       </div>
     </div>
@@ -571,7 +579,7 @@
     <div class="sec-head reveal">
       <div class="eyebrow">// Marketing Command</div>
       <h2 class="display">Turn Every Job Into <span class="accent">The Next One</span></h2>
-      <p>Marketing isn't a separate department at Spoke — it rides on the same AI workforce and data. Every call is tagged to its source, every happy customer feeds the flywheel.</p>
+      <p>Marketing isn't a separate department at Ringbrigade — it rides on the same AI workforce and data. Every call is tagged to its source, every happy customer feeds the flywheel.</p>
     </div>
     <div class="cards4">
       <div class="pcard reveal">
